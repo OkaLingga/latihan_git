@@ -7,6 +7,7 @@ class c_dbacrud extends CI_Controller{
     }
     
     function showallrecord(){
+		echo "Warsun";
         $data["hslquery"]=$this->tabel->getallrecord();
         $data["judulapp"]="Show All With Active Record";
         $this->load->view("v_cdbacrud_allrec",$data);
